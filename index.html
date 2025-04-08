@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="light-theme">
+  <div class="theme-toggle-container">
+    <button id="theme-toggle" class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <nav class="navbar">
+    <div class="title">
+      <h1 class="name-title">Ansh Kumar Tripathi</h1>
+      <h2 class="def-title"> - Project Gallery</h2>
+    </div>
+    <ul class="to-other-pages-link">
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Let's Connect</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-container">
+    <section id="left-column" class="left-column">
+      <div class="filter-section glass-panel">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <h4>By Skill</h4>
+          <div class="filter-options">
+            <label><input type="checkbox" name="skill" value="javascript"> JavaScript</label>
+            <label><input type="checkbox" name="skill" value="html"> HTML/CSS</label>
+            <label><input type="checkbox" name="skill" value="react"> React</label>
+            <label><input type="checkbox" name="skill" value="node"> Node.js</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>By Concept</h4>
+          <div class="filter-options">
+            <label><input type="checkbox" name="concept" value="web"> Web Development</label>
+            <label><input type="checkbox" name="concept" value="mobile"> Mobile</label>
+            <label><input type="checkbox" name="concept" value="api"> API</label>
+            <label><input type="checkbox" name="concept" value="game"> Game</label>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>By Date</h4>
+          <div class="filter-options">
+            <label><input type="radio" name="date" value="all" checked> All</label>
+            <label><input type="radio" name="date" value="2023"> 2023</label>
+            <label><input type="radio" name="date" value="2022"> 2022</label>
+            <label><input type="radio" name="date" value="2021"> 2021</label>
+          </div>
+        </div>
+        <button id="apply-filters" class="btn apply-btn">Apply Filters</button>
+        <button id="reset-filters" class="btn reset-btn">Reset</button>
+      </div>
+    </section>
+
+    <section id="main-section" class="main-section">
+      <div class="search-bar glass-panel" id="search-bar">
+        <input type="search" placeholder="Search the project here...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="grid-project" id="project-grid">
+        <!-- Projects will be inserted here by JavaScript -->
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
