@@ -24,74 +24,71 @@ if (savedTheme === "dark") {
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    date: "2023-06-15",
+    title: "Prahavati-Smart India Hackathon",
+    date: "2024-06-15",
     description:
-      "A full-stack e-commerce platform with React frontend and Node.js backend.",
-    image: "https://via.placeholder.com/300x180?text=E-Commerce",
-    skills: ["javascript", "react", "node", "web"],
-    github: "#",
-    youtube: "#",
-    website: "#",
+      "A simulation project that optimizes traffic signal timings using reinforcement learning.",
+    image: "./Images/prahavati.png", // Relative path to the image
+    skills: ["python", "reinforcement learning", "game"],
+    github:
+      "https://github.com/AnshKumarTripathi/Smart-Traffic-Control--phase-one",
+    youtube: "https://youtu.be/eP2X-dVapPs",
+    // website: "#",
   },
   {
     id: 2,
-    title: "Weather App",
-    date: "2023-04-10",
+    title: "Folder Backup Script",
+    date: "2024-06-17",
     description:
-      "Real-time weather application using OpenWeather API with location detection.",
-    image: "https://via.placeholder.com/300x180?text=Weather+App",
-    skills: ["javascript", "html", "api", "web"],
-    github: "#",
-    youtube: "#",
-    website: "#",
+      "This script is designed to automatically copy a folder from a source directory to a destination directory every day at a specified time.",
+    image: "./Images/backup.png", // Relative path to the image
+    skills: ["python", "automoation"],
+    github: "https://github.com/AnshKumarTripathi/backup-documents",
+    // youtube: "#",
+    // website: "#",
   },
   {
     id: 3,
-    title: "Task Manager",
-    date: "2022-11-20",
+    title: "File Organization Script",
+    date: "2024-06-17",
     description:
-      "Productivity app to manage daily tasks with drag-and-drop functionality.",
-    image: "https://via.placeholder.com/300x180?text=Task+Manager",
-    skills: ["javascript", "html", "web"],
-    github: "#",
-    youtube: "#",
-    website: "#",
+      "This script organizes files in a specified directory into subdirectories based on their file types. The file types are determined by their extensions, and the script moves each file into a corresponding subdirectory.",
+    image: "./Images/backup.png", // Relative path to the image
+    skills: ["python", "automoation"],
+    github: "https://github.com/AnshKumarTripathi/file-organizer",
+    // youtube: "#",
+    // website: "#",
   },
   {
     id: 4,
-    title: "Social Media Dashboard",
-    date: "2022-08-05",
+    title: "Spam Detection Using Random Forest Classifier",
+    date: "2024-06-18",
     description:
-      "Analytics dashboard for social media metrics with interactive charts.",
-    image: "https://via.placeholder.com/300x180?text=Social+Dashboard",
-    skills: ["javascript", "react", "web"],
-    github: "#",
-    youtube: "#",
-    website: "#",
+      "This project implements a spam detection system using a Random Forest Classifier. The model is trained on a dataset of emails labeled as spam or ham (not spam) and can classify new emails based on their content.",
+    image: "./Images/backup.png", // Relative path to the image
+    skills: [
+      "Jupyter Notebook",
+      "NLP",
+      "Feature Engineering",
+      "Data Preprocessing",
+      "Machine Learning",
+    ],
+    github:
+      "https://github.com/AnshKumarTripathi/email-spam-detection-randomForest",
+    // youtube: "#",
+    // website: "#",
   },
   {
     id: 5,
-    title: "Recipe Finder",
-    date: "2021-12-15",
+    title: "Pong Game in Assembly",
+    date: "2024-10-09",
     description:
-      "Search engine for recipes with filtering by ingredients and dietary restrictions.",
-    image: "https://via.placeholder.com/300x180?text=Recipe+Finder",
-    skills: ["javascript", "html", "api", "web"],
-    github: "#",
-    youtube: "#",
-    website: "#",
-  },
-  {
-    id: 6,
-    title: "Memory Game",
-    date: "2021-09-30",
-    description: "Classic card matching game with timer and score tracking.",
-    image: "https://via.placeholder.com/300x180?text=Memory+Game",
-    skills: ["javascript", "html", "game"],
-    github: "#",
-    youtube: "#",
-    website: "#",
+      "This project is a classic Pong game implemented in assembly language. The aim was to challenge ourselves by diving deep into low-level programming and understanding the intricacies of hardware interactions.",
+    image: "./Images/pong.png", // Relative path to the image
+    skills: ["assembly", "game"],
+    github: "https://github.com/AnshKumarTripathi/PONG-Game-Assembly",
+    youtube: "https://youtu.be/B1JLMqeY6RM",
+    // website: "#",
   },
 ];
 
@@ -106,11 +103,13 @@ function displayProjects(projectsToDisplay) {
     projectCard.className = "card-project glass-panel";
 
     const year = project.date.split("-")[0];
+    const month = project.date.split("-")[1];
+    const day = project.date.split("-")[2];
 
     projectCard.innerHTML = `
       <img src="${project.image}" alt="${project.title}">
       <h3 class="project-title">${project.title}</h3>
-      <p class="project-date">${year}</p>
+      <p class="project-date">${year + "/" + month + "/" + day}</p>
       <p class="project-description">${project.description}</p>
       <div class="project-skills">
         ${project.skills
