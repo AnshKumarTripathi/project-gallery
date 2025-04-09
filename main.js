@@ -25,47 +25,45 @@ const projects = [
   {
     id: 1,
     title: "Prahavati-Smart India Hackathon",
-    date: "2024-06-15",
+    date: "2024-09-15",
     description:
       "A simulation project that optimizes traffic signal timings using reinforcement learning.",
-    image: "./Images/prahavati.png", // Relative path to the image
+    image: "./Images/prahavati.png",
     skills: ["python", "reinforcement learning", "game"],
     github:
       "https://github.com/AnshKumarTripathi/Smart-Traffic-Control--phase-one",
     youtube: "https://youtu.be/eP2X-dVapPs",
-    // website: "#",
+    // website:"#",
   },
   {
     id: 2,
     title: "Folder Backup Script",
-    date: "2024-06-17",
+    date: "2024-09-17",
     description:
       "This script is designed to automatically copy a folder from a source directory to a destination directory every day at a specified time.",
-    image: "./Images/backup.png", // Relative path to the image
+    image: "./Images/backup.png",
     skills: ["python", "automoation"],
     github: "https://github.com/AnshKumarTripathi/backup-documents",
-    // youtube: "#",
-    // website: "#",
+    // website:"#",
   },
   {
     id: 3,
     title: "File Organization Script",
-    date: "2024-06-17",
+    date: "2024-09-17",
     description:
       "This script organizes files in a specified directory into subdirectories based on their file types. The file types are determined by their extensions, and the script moves each file into a corresponding subdirectory.",
-    image: "./Images/backup.png", // Relative path to the image
+    image: "./Images/backup.png",
     skills: ["python", "automoation"],
     github: "https://github.com/AnshKumarTripathi/file-organizer",
-    // youtube: "#",
-    // website: "#",
+    // website:"#",
   },
   {
     id: 4,
     title: "Spam Detection Using Random Forest Classifier",
-    date: "2024-06-18",
+    date: "2024-09-18",
     description:
       "This project implements a spam detection system using a Random Forest Classifier. The model is trained on a dataset of emails labeled as spam or ham (not spam) and can classify new emails based on their content.",
-    image: "./Images/backup.png", // Relative path to the image
+    image: "./Images/random.png",
     skills: [
       "Jupyter Notebook",
       "NLP",
@@ -75,20 +73,99 @@ const projects = [
     ],
     github:
       "https://github.com/AnshKumarTripathi/email-spam-detection-randomForest",
-    // youtube: "#",
-    // website: "#",
+    // website:"#",
   },
   {
     id: 5,
     title: "Pong Game in Assembly",
-    date: "2024-10-09",
+    date: "2024-11-09",
     description:
       "This project is a classic Pong game implemented in assembly language. The aim was to challenge ourselves by diving deep into low-level programming and understanding the intricacies of hardware interactions.",
-    image: "./Images/pong.png", // Relative path to the image
+    image: "./Images/pong.png",
     skills: ["assembly", "game"],
     github: "https://github.com/AnshKumarTripathi/PONG-Game-Assembly",
     youtube: "https://youtu.be/B1JLMqeY6RM",
-    // website: "#",
+    // website:"#",
+  },
+  {
+    id: 6,
+    title: "Handwritten Digit Recognition",
+    date: "2024-11-07",
+    description:
+      "This project involves recognizing handwritten digits using a neural network trained on the MNIST dataset. The MNIST dataset contains 70,000 images of handwritten digits, each labeled with the corresponding digit.",
+    image: "./Images/handwritten.png",
+    skills: [
+      "Jupyter Notebook",
+      "NLP",
+      "Feature Engineering",
+      "Data Preprocessing",
+      "Machine Learning",
+    ],
+    github:
+      "https://github.com/AnshKumarTripathi/Handwritten-Digit-Recognition-mnist",
+    // youtube: "#",
+    // website:"#",
+  },
+  {
+    id: 7,
+    title: "Satkarma LEO Club Booklet",
+    date: "2024-11-23",
+    description:
+      "Me with my team builkt the club booklet showcasing the club activites we did, and hosted that booklet on github pages so everyone can access.",
+    image: "./Images/leo-booklet.png",
+    skills: ["html", "css", "javascript", "content writing", "magzine design"],
+    github: "https://github.com/AnshKumarTripathi/satkarma-leo-booklet",
+    // youtube: "#",
+    website: "https://anshkumartripathi.github.io/satkarma-leo-booklet/#home",
+  },
+  {
+    id: 8,
+    title: "Design Engineering Project (Budget Tracker)",
+    date: "2025-01-10",
+    description:
+      "This project was developed as part of the Design Engineering Project for Semester 5.",
+    image: "./Images/de.png",
+    skills: ["html", "css", "javascript", "web"],
+    github: "https://github.com/AnshKumarTripathi/satkarma-leo-booklet",
+    // youtube: "#",
+    website: "https://anshkumartripathi.github.io/satkarma-leo-booklet/#home",
+  },
+  {
+    id: 9,
+    title: "Human Pose Estimation Web App (AICTE-Internship)",
+    date: "2025-01-12",
+    description:
+      "A web-based application that performs human pose estimation on uploaded images using machine learning techniques, specifically leveraging the OpenPose model with OpenCV in a Streamlit environment.",
+    image: "./Images/human-pose.png",
+    skills: ["python", "openCV", "streamlit", "web"],
+    github:
+      "https://github.com/AnshKumarTripathi/AICTE-Internship-Dec-Jan-Techsaksham",
+    // youtube: "#",
+    // website: "",
+  },
+  {
+    id: 10,
+    title: "Sentiment Analysis Platform",
+    date: "2025-01-15",
+    description:
+      "This is a Flask-based web application that performs real-time sentiment analysis on tweets, text, and web content. The application leverages the `transformers` library for sentiment analysis and uses `Selenium` for web scraping.",
+    image: "https://picsum.photos/200/300/?blur",
+    skills: ["python", "flask", "NLP", "web scrapping", "web"],
+    github: "https://github.com/AnshKumarTripathi/sentiment_analysis_platform",
+    // youtube: "#",
+    // website: "",
+  },
+  {
+    id: 11,
+    title: "Linkdln Sentiment Analysis Platform",
+    date: "2025-01-19",
+    description:
+      "This is a Flask-based web application that performs real-time sentiment analysis on tweets, text, and web content. The application leverages the `transformers` library for sentiment analysis and uses `Selenium` for web scraping.",
+    image: "./Images/linkdln.png",
+    skills: ["python", "flask", "NLP", "web scrapping", "web"],
+    github: "https://github.com/AnshKumarTripathi/sentiment_analysis_platform",
+    youtube: "https://youtu.be/MRhXm7maprA",
+    // website: "",
   },
 ];
 
@@ -96,9 +173,14 @@ const projects = [
 const projectGrid = document.getElementById("project-grid");
 
 function displayProjects(projectsToDisplay) {
+  // Sort projects by date (newest first)
+  const sortedProjects = [...projectsToDisplay].sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
+
   projectGrid.innerHTML = "";
 
-  projectsToDisplay.forEach((project) => {
+  sortedProjects.forEach((project) => {
     const projectCard = document.createElement("div");
     projectCard.className = "card-project glass-panel";
 
@@ -229,5 +311,5 @@ searchInput.addEventListener("keyup", (e) => {
   }
 });
 
-// Initialize with all projects
+// Initialize with all projects (sorted by date)
 displayProjects(projects);
